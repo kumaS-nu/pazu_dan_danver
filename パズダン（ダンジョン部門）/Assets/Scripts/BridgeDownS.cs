@@ -4,6 +4,7 @@ using UnityEngine;
 public class BridgeDownS : MonoBehaviour {
     public bool pushed;
     public B_swith swe;
+    public string str;
 
     private void Start()
     {
@@ -14,7 +15,7 @@ public class BridgeDownS : MonoBehaviour {
     void Update () {
 		if(swe.bridge_swich == true && pushed == false)
         {
-            GetComponent<Animation>().Play("BridgeDown"); // アニメーション再生
+            GetComponent<Animation>().Play(str); // アニメーション再生
             pushed = true;
         }
 	}
