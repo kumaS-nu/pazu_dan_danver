@@ -12,7 +12,7 @@ public class Swith : MonoBehaviour {
     private DateTime time;
 
     // ボタンが押されてから次にまた押せるまでの時間(秒)
-    private TimeSpan allowTime = new TimeSpan(0, 0, 0,0,300);
+    private TimeSpan allowTime = new TimeSpan(0, 0, 0,0,500);
 
     // 前回ボタンが押された時点と現在時間との差分を格納
     private TimeSpan pastTime;

@@ -1310,10 +1310,10 @@ RectTransform:
   m_Father: {fileID: 1928233984}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -330, y: -340}
-  m_SizeDelta: {x: 300, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 250, y: 30}
+  m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &877855447
 MonoBehaviour:
@@ -1336,18 +1336,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 60
+    m_MaxSize: 150
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00'00''0
+  m_Text: 0'00''0
 --- !u!222 &877855448
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3958,6 +3958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextscene: Stage2
   time: {fileID: 1059705177}
+  filename: stage1
 --- !u!65 &1651321986
 BoxCollider:
   m_ObjectHideFlags: 0
