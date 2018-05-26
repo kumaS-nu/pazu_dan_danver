@@ -8,7 +8,7 @@ using System.Collections;
 
 namespace UnityChan
 {
-	/*public class ThirdPersonCamera : MonoBehaviour
+	public class ThirdPersonCamera : MonoBehaviour
 	{
 		public float smooth = 3f;		// カメラモーションのスムーズ化用変数
 		Transform standardPos;			// the usual position for the camera, specified by a transform in the game
@@ -79,5 +79,5 @@ namespace UnityChan
 			transform.position = Vector3.Lerp (transform.position, jumpPos.position, Time.fixedDeltaTime * smooth);	
 			transform.forward = Vector3.Lerp (transform.forward, jumpPos.forward, Time.fixedDeltaTime * smooth);		
 		}
-	}*/
+	}
 }
