@@ -2680,6 +2680,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1373761396}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1390183824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1390183826}
+  - component: {fileID: 1390183825}
+  m_Layer: 0
+  m_Name: Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!111 &1390183825
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390183824}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4bd5bac4ccdae4f9c85135b8fd7da355, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4bd5bac4ccdae4f9c85135b8fd7da355, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!4 &1390183826
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390183824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1423873511
 Prefab:
   m_ObjectHideFlags: 0
@@ -4704,6 +4748,7 @@ GameObject:
   - component: {fileID: 1651321982}
   - component: {fileID: 1651321985}
   - component: {fileID: 1651321986}
+  - component: {fileID: 1651321987}
   m_Layer: 0
   m_Name: Goal floor
   m_TagString: Untagged
@@ -4806,6 +4851,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8, y: 1.5, z: 10}
   m_Center: {x: 0, y: 0.4, z: 0}
+--- !u!111 &1651321987
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651321980}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2945d5f95b61c458c9651895a514de58, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2945d5f95b61c458c9651895a514de58, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1676907814
 GameObject:
   m_ObjectHideFlags: 0

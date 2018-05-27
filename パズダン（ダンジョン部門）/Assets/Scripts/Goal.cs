@@ -17,8 +17,8 @@ public class Goal : MonoBehaviour {
             FileStream BinaryFile = new FileStream(filename + ".dat", FileMode.Create, FileAccess.Write);   //クリアタイム書き込み
             BinaryWriter Writer = new BinaryWriter(BinaryFile);
             Writer.Write(time.spend_time);
-
             SceneManager.LoadScene(nextscene);     // 次のステージへ
         }
     }
+    
 }
