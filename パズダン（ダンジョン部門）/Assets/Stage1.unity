@@ -4836,7 +4836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e4af4ae92b44e46be289094b9a8721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextscene: Stage2
+  nextscene: Stage2OP
   time: {fileID: 1059705177}
   filename: stage1
 --- !u!65 &1651321986

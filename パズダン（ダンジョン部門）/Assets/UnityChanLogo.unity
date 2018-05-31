@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wait: 5000
-  str: Stage1
+  str: Stage1OP
 --- !u!4 &1522460939
 Transform:
   m_ObjectHideFlags: 0

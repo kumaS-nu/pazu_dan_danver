@@ -9,12 +9,18 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/UnityChanLogo.unity
+    guid: 56bab93f56ac74b419ea352f0168f234
+  - enabled: 1
+    path: Assets/Stage1OP.unity
+    guid: bf79121c207bad94b9f901e2fa2aca4b
+  - enabled: 1
     path: Assets/Stage1.unity
     guid: 57b9fe0dcab1a5f4db1b5ec2e25043d1
   - enabled: 1
+    path: Assets/Stage2OP.unity
+    guid: 0f19b8f40b039434a9a0b56f49d6baef
+  - enabled: 1
     path: Assets/Stage2.unity
     guid: c3de8c21d5e76d64a8a9723918627711
-  - enabled: 1
-    path: Assets/UnityChanLogo.unity
-    guid: 56bab93f56ac74b419ea352f0168f234
   m_configObjects: {}
