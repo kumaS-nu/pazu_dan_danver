@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class InputManager : MonoBehaviour
 {
-
+    public string inputValue;
     InputField inputField;
 
 
@@ -31,9 +31,9 @@ public class InputManager : MonoBehaviour
     public void InputLogger()
     {
 
-        string inputValue = inputField.text;
+        inputValue = inputField.text;
 
-        Debug.Log(inputValue);
+        //Debug.Log(inputValue);
 
         InitInputField();
     }

@@ -10,6 +10,7 @@ public class RecordSave : MonoBehaviour {
     private string str_reco;
     private List<string>[] reco;
     private int datenum;
+    public InputManager name;
 	// Use this for initialization
 	void Start () {
         int len;
@@ -95,7 +96,7 @@ public class RecordSave : MonoBehaviour {
                 }
                 if(rank == i)
                 {
-                   // new_reco[i - 1][0] =;
+                    new_reco[i - 1][0] = name.inputValue;
                     new_reco[i - 1][1] = stage1.Time_get().ToString();
                     new_reco[i - 1][2] = stage2.Time_get().ToString();
                     new_reco[i - 1][3] = totaltime.Time_get().ToString();
