@@ -2980,6 +2980,10 @@ Prefab:
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400002, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
     - {fileID: 11400000, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
@@ -11258,8 +11262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e4af4ae92b44e46be289094b9a8721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextscene: 
-  time: {fileID: 0}
+  nextscene: Result
+  time: {fileID: 1346635553}
   filename: stage2
 --- !u!65 &1625418296
 BoxCollider:
