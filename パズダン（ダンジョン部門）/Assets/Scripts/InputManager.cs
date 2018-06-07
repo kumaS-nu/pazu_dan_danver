@@ -16,8 +16,8 @@ public class InputManager : MonoBehaviour
     {
 
         inputField = GetComponent<InputField>();
-
-        InitInputField();
+        StartCoroutine("InitInputField");
+        
     }
 
 
@@ -46,12 +46,12 @@ public class InputManager : MonoBehaviour
     /// </summary>
 
 
-    void InitInputField()
+    IEnumerator InitInputField()
     {
 
         // 値をリセット
         inputField.text = "";
-
+        yield return new WaitForSeconds(1.0f);
         // フォーカス
         inputField.ActivateInputField();
     }
