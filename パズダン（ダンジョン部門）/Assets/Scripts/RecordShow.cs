@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System;
 using UnityEngine.SceneManagement;
 
 public class RecordShow : MonoBehaviour {
@@ -12,13 +13,15 @@ public class RecordShow : MonoBehaviour {
     public UnityEngine.UI.Text no5;
     private string str_reco;
     private string[,] reco;
-    private int datenum;
+    public int datenum;
     private string[] text;
-    public bool flag;
+    private DateTime time;
+    TimeSpan allowTime = new TimeSpan(0, 0, 0, 1);
 
     // Use this for initialization
     void Start()
     {
+        time = DateTime.Now;
         reco = new string[5,4];
         
         FileStream file = new FileStream("Record.dat", FileMode.Open, FileAccess.Read);
@@ -30,6 +33,7 @@ public class RecordShow : MonoBehaviour {
         }
         catch (EndOfStreamException)
         {
+            datenum = 0;
             goto last;
         }
 
@@ -78,7 +82,7 @@ public class RecordShow : MonoBehaviour {
                 int time = 0;
                 for (j = 0; j < reco[i,k].Length; j++)
                 {
-                    int num = reco[i,3][reco[i,k].Length - j - 1] - '0';
+                    int num = reco[i,k][reco[i, k].Length - j - 1] - '0';
                     for (int m = 0; m < j; m++)
                     {
                         num *= 10;
@@ -90,7 +94,10 @@ public class RecordShow : MonoBehaviour {
                 text[i] += ("     " + (time / 600).ToString() + "'" + (time % 600 / 10).ToString() + "''" + (time % 10).ToString());
             }
         }
-
+        for(int i = 0; i < datenum; i++)
+        {
+            Debug.Log(text[i]);
+        }
         if(datenum > 4)
              no5.text = text[4];
         if(datenum > 3)
@@ -110,13 +117,14 @@ public class RecordShow : MonoBehaviour {
 
         last:;
         file.Close();
+        Debug.Log(datenum);
     }
 
 
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetAxisRaw("Submit") != 0 && flag == true)
+        if (Input.GetAxisRaw("Submit") != 0 && allowTime < DateTime.Now - time)
         {
             SceneManager.LoadScene("Start");
         }

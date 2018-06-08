@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Result.unity
     guid: b2059f0a0ada4454597121d15cc1d0c2
+  - enabled: 1
+    path: Assets/Record.unity
+    guid: 041d9499dd8ae35419bf8d02ef015f07
   m_configObjects: {}
