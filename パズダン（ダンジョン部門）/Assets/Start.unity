@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   str: Stage1OP
-  is_Start: 0
+  is_Start: 1
 --- !u!1 &561756840
 GameObject:
   m_ObjectHideFlags: 0
