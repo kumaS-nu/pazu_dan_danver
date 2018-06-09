@@ -22,8 +22,6 @@ public class SceneLoadScript : MonoBehaviour {
         {
             if (Input.GetAxisRaw("Submit") != 0 && is_Start == true)
                 Scene1();
-            if ((Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0 )&& is_Start == false)
-                Scene1();
         }
         if (Input.GetKey(KeyCode.Escape))
             Application.Quit();

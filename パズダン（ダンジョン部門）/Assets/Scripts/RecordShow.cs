@@ -11,6 +11,7 @@ public class RecordShow : MonoBehaviour {
     public UnityEngine.UI.Text no3;
     public UnityEngine.UI.Text no4;
     public UnityEngine.UI.Text no5;
+    public Button_SceneLoad button;
     private string str_reco;
     private string[,] reco;
     public int datenum;
@@ -124,7 +125,7 @@ public class RecordShow : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetAxisRaw("Submit") != 0 && allowTime < DateTime.Now - time)
+        if (button.Get_pushed() && allowTime < DateTime.Now - time)
         {
             SceneManager.LoadScene("Start");
         }

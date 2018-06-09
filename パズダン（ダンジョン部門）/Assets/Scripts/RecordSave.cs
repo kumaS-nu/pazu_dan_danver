@@ -11,6 +11,7 @@ public class RecordSave : MonoBehaviour {
     private string[,] reco;
     private int date_num;
     public InputManager pname;
+    public Button_SceneLoad button;
 	// Use this for initialization
 	void Start () {
         int len;
@@ -65,7 +66,7 @@ public class RecordSave : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetAxisRaw("Submit") != 0 )
+        if (button.Get_pushed())
         {
             string[,] new_reco;
             new_reco = new string[6,4];
